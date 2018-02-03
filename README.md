@@ -20,11 +20,11 @@
 
  -	To get started with Frisby.js, add it to your project as a dev dependency:
         
-     `npm insall  frisby --save-dev`
+     `npm install  frisby --save-dev`
         
  -	Frisby.js uses Jasmine style assertion syntax, and uses Jest to run tests. Install it:
      
-     `npm insall  --save-dev jest`
+     `npm install  --save-dev jest`
  
  -	To run your tests, open a Terminal or console window, and type jest from the root folder of your project:
     
@@ -34,7 +34,7 @@
    with custom options from the fetch spec.                                                                                    
             You can  install  HttpProxyAgent (HttpsProxyAgent)   and use in fetch method.
    
-   `install npm install https-proxy-agent`
+   `npm install https-proxy-agent`
    
 ## Test-1
   Test Folder: test_1_spec.js  
@@ -72,6 +72,7 @@
   - https://itmastermindblog.wordpress.com/2016/02/18/frisby-js-commands/
   - https://github.com/verdverm/frisby
   - https://lodash.com/docs/4.17.4#orderBy 
+  - https://www.npmjs.com/package/https-proxy-agent
   
 
  
