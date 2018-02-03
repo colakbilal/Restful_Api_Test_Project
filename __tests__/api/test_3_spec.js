@@ -12,7 +12,7 @@ it('should find india alpha3code and then use it on another service call ', func
 		          .fetch('http://services.groupkt.com/state/get/'+ codeIndia + '/all', {method: 'GET'})
 			      .expect('status', 200)
 			      .then(function(response){
-					  const state = response.json.RestResponse.result.find(item => item.id===65);
+				      const state = response.json.RestResponse.result.find(item => item.id===65);
 				      expect(state.largest_city).toEqual('Srinagar Jammu')
 			        })
 	})
