@@ -1,0 +1,15 @@
+{
+  "name": "api_frisby_project",
+  "version": "1.0.0",
+  "dependencies": {
+    "http-proxy-agent": "^2.0.0",
+    "https-proxy-agent": "^2.1.1",
+    "joi-browser": "^13.0.1",
+    "lodash": "^4.17.4",
+    "sort-json-array": "^0.1.7"
+  },
+  "devDependencies": {
+    "frisby": "^2.0.5",
+    "jest": "^22.1.4"
+  }
+}
