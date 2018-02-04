@@ -7,7 +7,7 @@ it('should response contains "result" object and type of it is Array ', function
 	.fetch('http://services.groupkt.com/state/get/USA/all', {method: 'GET'})
 	.expect('status', 200)
 	.expect('json','RestResponse.result')
-    .then(function(response){
+        .then(function(response){
 	   expect(response.json.RestResponse.result instanceof Array).toBe(true)
 	})
 	.done(done);
@@ -16,7 +16,7 @@ it('should response contains "result" object and type of it is Array ', function
 
 it ('should result elements has correct keys and verify types of some key value ', function (done) {
   frisby
-    .fetch('http://services.groupkt.com/state/get/USA/all', {method: 'GET'}) 
+        .fetch('http://services.groupkt.com/state/get/USA/all', {method: 'GET'}) 
 	.expect('jsonTypes', 'RestResponse.result.*', {
 		id: Joi.number(),
 		country: Joi.string()
