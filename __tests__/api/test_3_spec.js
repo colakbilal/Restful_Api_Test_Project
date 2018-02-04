@@ -4,7 +4,7 @@ const frisby = require('frisby');
 it('should find india alpha3code and then use it on another service call ', function (done) {
   frisby
 	.fetch('http://services.groupkt.com/country/get/all', {method: 'GET'})	
-    .expect('status', 200)
+        .expect('status', 200)
 	.then(function(response){
 		const india = response.json.RestResponse.result.find(country => country.name==='India');
 		const codeIndia = india.alpha3_code;
