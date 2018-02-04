@@ -6,7 +6,7 @@ it('should fetch successfully and the response should contains "RestResponse" ob
   frisby
     .fetch('http://services.groupkt.com/country/get/all', {method: 'GET'})
     .expect('status', 200)
-	.expect('json', "RestResponse")
+    .expect('json', "RestResponse")
     .expect('header', 'content-type', /application\/json/)
     .done(done);
 }); 
